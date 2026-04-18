@@ -1,3 +1,5 @@
+namespace LabApp.Models;
+
 public class Result
 {
     public int Id { get; set; }

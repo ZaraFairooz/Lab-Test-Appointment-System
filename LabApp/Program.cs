@@ -1,8 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+//Update Program.cs
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=labapp.db"));
 
 var app = builder.Build();
 
