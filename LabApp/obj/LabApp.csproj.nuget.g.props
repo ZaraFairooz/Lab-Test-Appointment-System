@@ -4,21 +4,21 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/bushrafairooz/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/bushrafairooz/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/var/folders/8n/c7v94vmn0l58nwz215kyqb6h0000gn/T/cursor-sandbox-cache/9b9fe7e91f2b4683c4a61a80b2519e48/nuget</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/var/folders/8n/c7v94vmn0l58nwz215kyqb6h0000gn/T/cursor-sandbox-cache/9b9fe7e91f2b4683c4a61a80b2519e48/nuget</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/Users/bushrafairooz/.nuget/packages/" />
+    <SourceRoot Include="/var/folders/8n/c7v94vmn0l58nwz215kyqb6h0000gn/T/cursor-sandbox-cache/9b9fe7e91f2b4683c4a61a80b2519e48/nuget/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore/10.0.6/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore/10.0.6/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers/3.11.0/buildTransitive/Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers/3.11.0/buildTransitive/Microsoft.CodeAnalysis.Analyzers.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/10.0.6/build/net10.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/10.0.6/build/net10.0/Microsoft.EntityFrameworkCore.Design.props')" />
+    <Import Project="$(NuGetPackageRoot)/microsoft.entityframeworkcore/10.0.6/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)/microsoft.entityframeworkcore/10.0.6/buildTransitive/net10.0/Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)/microsoft.codeanalysis.analyzers/3.11.0/buildTransitive/Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)/microsoft.codeanalysis.analyzers/3.11.0/buildTransitive/Microsoft.CodeAnalysis.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)/microsoft.entityframeworkcore.design/10.0.6/build/net10.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)/microsoft.entityframeworkcore.design/10.0.6/build/net10.0/Microsoft.EntityFrameworkCore.Design.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/Users/bushrafairooz/.nuget/packages/microsoft.codeanalysis.analyzers/3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/Users/bushrafairooz/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.6</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/var/folders/8n/c7v94vmn0l58nwz215kyqb6h0000gn/T/cursor-sandbox-cache/9b9fe7e91f2b4683c4a61a80b2519e48/nuget/microsoft.codeanalysis.analyzers/3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/var/folders/8n/c7v94vmn0l58nwz215kyqb6h0000gn/T/cursor-sandbox-cache/9b9fe7e91f2b4683c4a61a80b2519e48/nuget/microsoft.entityframeworkcore.tools/10.0.6</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

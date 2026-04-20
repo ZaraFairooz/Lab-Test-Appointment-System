@@ -11,11 +11,16 @@ public class AuthController : ControllerBase
 {
     private readonly AppDbContext _context;
     private readonly IConfiguration _config;
+    private readonly ILogger<AuthController> _logger;
 
-    public AuthController(AppDbContext context, IConfiguration config)
+    public AuthController(
+        AppDbContext context,
+        IConfiguration config,
+        ILogger<AuthController> logger)
     {
         _context = context;
         _config = config;
+        _logger = logger;
     }
 
     [HttpPost("register")]
@@ -24,6 +29,7 @@ public class AuthController : ControllerBase
         user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
+        _logger.LogInformation("Registered user {UserId} with email {Email}", user.Id, user.Email);
         return Ok(user);
     }
 
@@ -33,9 +39,13 @@ public class AuthController : ControllerBase
         var user = _context.Users.FirstOrDefault(u => u.Email == login.Email);
 
         if (user == null || !BCrypt.Net.BCrypt.Verify(login.PasswordHash, user.PasswordHash))
+        {
+            _logger.LogWarning("Failed login attempt for email {Email}", login.Email);
             return Unauthorized();
+        }
 
         var token = GenerateJwtToken(user);
+        _logger.LogInformation("User {Email} signed in", user.Email);
         return Ok(new { token });
     }
 

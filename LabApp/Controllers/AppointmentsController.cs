@@ -9,10 +9,14 @@ using Microsoft.AspNetCore.Authorization;
 public class AppointmentsController : ControllerBase
 {
     private readonly AppDbContext _context;
+    private readonly ILogger<AppointmentsController> _logger;
 
-    public AppointmentsController(AppDbContext context)
+    public AppointmentsController(
+        AppDbContext context,
+        ILogger<AppointmentsController> logger)
     {
         _context = context;
+        _logger = logger;
     }
 
     [HttpGet]
@@ -27,6 +31,11 @@ public class AppointmentsController : ControllerBase
         appt.Status = "Pending";
         _context.Appointments.Add(appt);
         await _context.SaveChangesAsync();
+        _logger.LogInformation(
+            "Created appointment {AppointmentId} for patient {PatientId}, test {TestType}",
+            appt.Id,
+            appt.PatientId,
+            appt.TestType);
         return Ok(appt);
     }
 }
