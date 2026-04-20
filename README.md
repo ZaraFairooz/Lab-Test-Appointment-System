@@ -1,3 +1,4 @@
+<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 19 PM" src="https://github.com/user-attachments/assets/abcac5df-9796-4741-a5c3-80737bb738af" />
 # Lab-Test-Appointment-System
 
 A small full-stack **lab appointment** demo: an ASP.NET Core Web API with SQLite, JWT authentication, and a React web UI.
