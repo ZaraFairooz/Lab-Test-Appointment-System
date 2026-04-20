@@ -83,15 +83,4 @@ dotnet ef database update
 Configuration notes
 JWT key must be long enough for signing (short keys can cause runtime errors). Keep Jwt:Key and Jwt:Issuer in sync between token creation (AuthController) and validation (Program.cs).
 CORS is configured for http://localhost:3000 (React dev server). Change Program.cs if you use another origin/port.
-Suggested .gitignore (don’t commit)
-Avoid committing build output, local DB, and secrets:
 
-**/bin/, **/obj/
-*.db, *.db-shm, *.db-wal
-labapp-ui/node_modules/
-Local env overrides with secrets (e.g. .env.local)
-Stage source code from the repository root (not only inside labapp-ui/) when you commit.
-<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 46 PM" src="https://github.com/user-attachments/assets/b887e65e-a4ee-422b-b32c-e4f4b211c69e" />
-<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 37 PM" src="https://github.com/user-attachments/assets/248740e1-0f72-4591-a3e5-6edbadaccd17" />
-<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 23 PM" src="https://github.com/user-attachments/assets/7b4fcbe5-675a-44f1-ab30-97459e4ac5a2" />
-<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 19 PM" src="https://github.com/user-attachments/assets/75412e99-0622-4d08-861c-aac96ab53471" />
