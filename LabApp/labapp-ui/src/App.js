@@ -1,31 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from "react";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import AppLayout from "./components/AppLayout";
+import { AuthProvider } from "./context/AuthContext";
+import AppointmentsPage from "./pages/AppointmentsPage";
+import LoginPage from "./pages/LoginPage";
+import PatientsPage from "./pages/PatientsPage";
+import RegisterPage from "./pages/RegisterPage";
+
+const theme = createTheme({
+  palette: {
+    mode: "light",
+    primary: { main: "#1565c0" },
+    secondary: { main: "#00695c" },
+    background: { default: "#f5f7fa" },
+  },
+});
 
 function App() {
-  useEffect(() => {
-    fetch("http://localhost:5066/api/patients")
-      .then(res => res.json())
-      .then(data => console.log(data));
-  }, []);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <AuthProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<AppLayout />}>
+              <Route index element={<Navigate to="/patients" replace />} />
+              <Route path="login" element={<LoginPage />} />
+              <Route path="register" element={<RegisterPage />} />
+              <Route path="patients" element={<PatientsPage />} />
+              <Route path="appointments" element={<AppointmentsPage />} />
+            </Route>
+          </Routes>
+        </Router>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }
 
