@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 [ApiController]
 [Route("api/[controller]")]
-public class PatientsController : ControllerBase
+public class AppointmentsController : ControllerBase
 {
     private readonly AppDbContext _context;
 
-    public PatientsController(AppDbContext context)
+    public AppointmentsController(AppDbContext context)
     {
         _context = context;
     }
@@ -16,14 +16,15 @@ public class PatientsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> Get()
     {
-        return Ok(await _context.Patients.ToListAsync());
+        return Ok(await _context.Appointments.ToListAsync());
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Patient patient)
+    public async Task<IActionResult> Create(Appointment appt)
     {
-        _context.Patients.Add(patient);
+        appt.Status = "Pending";
+        _context.Appointments.Add(appt);
         await _context.SaveChangesAsync();
-        return Ok(patient);
+        return Ok(appt);
     }
 }
