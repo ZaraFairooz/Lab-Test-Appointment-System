@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pswIWRYfaHs=",
+  "dgSpecHash": "g7LwkqxRAaI=",
   "success": true,
   "projectFilePath": "/Users/bushrafairooz/Lab Test Appointment System/LabApp/LabApp.csproj",
   "expectedPackageFiles": [
+    "/Users/bushrafairooz/.nuget/packages/bcrypt.net-next/4.1.0/bcrypt.net-next.4.1.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/10.0.6/microsoft.aspnetcore.authentication.jwtbearer.10.0.6.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.aspnetcore.openapi/10.0.6/microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512",
@@ -24,12 +25,12 @@
     "/Users/bushrafairooz/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.6/microsoft.entityframeworkcore.sqlite.core.10.0.6.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.6/microsoft.entityframeworkcore.tools.10.0.6.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.extensions.dependencymodel/10.0.6/microsoft.extensions.dependencymodel.10.0.6.nupkg.sha512",
-    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.abstractions/8.0.1/microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
-    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
-    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.abstractions/8.17.0/microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
+    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.17.0/microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
+    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.logging/8.17.0/microsoft.identitymodel.logging.8.17.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.protocols/8.0.1/microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/8.0.1/microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
-    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "/Users/bushrafairooz/.nuget/packages/microsoft.identitymodel.tokens/8.17.0/microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/microsoft.visualstudio.solutionpersistence/1.0.52/microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
@@ -45,7 +46,7 @@
     "/Users/bushrafairooz/.nuget/packages/system.composition.hosting/9.0.0/system.composition.hosting.9.0.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/system.composition.runtime/9.0.0/system.composition.runtime.9.0.0.nupkg.sha512",
     "/Users/bushrafairooz/.nuget/packages/system.composition.typedparts/9.0.0/system.composition.typedparts.9.0.0.nupkg.sha512",
-    "/Users/bushrafairooz/.nuget/packages/system.identitymodel.tokens.jwt/8.0.1/system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
+    "/Users/bushrafairooz/.nuget/packages/system.identitymodel.tokens.jwt/8.17.0/system.identitymodel.tokens.jwt.8.17.0.nupkg.sha512"
   ],
   "logs": []
 }
