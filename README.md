@@ -40,10 +40,17 @@ Controllers inject **`ILogger<T>`** and log structured messages, e.g. after crea
 - **MUI** — layout (app bar), forms, tables.
 - **`.env`** — `REACT_APP_API_URL=http://localhost:5066` (API base URL for `fetch`).
 **Important:** Use **`http://localhost:5066`** in the browser/React (same as the default **`http`** launch profile), not a random `https` port from older tutorials.
+---
+### Screenshots
+
 <img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 23 PM" src="https://github.com/user-attachments/assets/31f6fcc0-7ca2-4121-b812-a5e047820dfa" />
+
 <img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 19 PM" src="https://github.com/user-attachments/assets/abcac5df-9796-4741-a5c3-80737bb738af" />
+
 <img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 46 PM" src="https://github.com/user-attachments/assets/29a6c379-0b9e-4dbf-aa9a-843b029de1aa" />
-<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 37 PM" src="https://github.com/user-attachments/assets/a613005d-568d-4fff-b011-d4ecf4430844" /> .
+
+<img width="1440" height="788" alt="Screenshot 2026-04-20 at 2 25 37 PM" src="https://github.com/user-attachments/assets/a613005d-568d-4fff-b011-d4ecf4430844" /> 
+
 ---
 ## API overview (for testing)
 | Method | Path | Auth |
